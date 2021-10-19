@@ -1,0 +1,59 @@
+/*슬라이더 꾸미기*/
+.slider {
+	width: 60%;
+	margin: 100px auto;
+	cursor:pointer;
+}
+
+.slick-slide {
+  margin:50px 0px;
+}
+
+.slick-slide img {
+  width: 100%;
+  display:block;
+  box-shadow:5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content:'';
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: 1;
+}
+
+.slick-active {
+  opacity: 1;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
+.slick-active{
+		transform:scale(1.1, 1.1);
+}
+
+.slick-current{
+	position:relative;
+	z-index:2;
+	transform:scale(1.2, 1.2);
+}
+
+/*이동버튼 꾸미기*/
+.slick-prev, .slick-next{
+	display:none !important;
+}
+
+/*블릿버튼 꾸미기*/
+.slick-dots li button{
+	display:none !important;
+}
+.slick-dots li.slick-active button{
+	display:none !important;
+}
+	
