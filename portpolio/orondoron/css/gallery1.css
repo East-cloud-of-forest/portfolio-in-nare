@@ -1,0 +1,63 @@
+html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      content:'';
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: 1;
+    }
+    
+    .slick-active {
+      opacity: 1;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+	
+	/*이동버튼 꾸미기*/
+	.slick-prev, .slick-next{
+		width:27px;
+		height:50px;
+		display:none !important;
+	}
+	
+	/*블릿버튼 꾸미기*/
+	.slick-dots li button:before{
+		content:'';	
+	}
+	.slick-dots li button{
+		width:100%;
+		height:3px;
+		padding:0;
+		background:gray;
+		opacity: 0.5;
+	}
+	.slick-dots li.slick-active button{
+		background:gray;
+		opacity:1
+	}
